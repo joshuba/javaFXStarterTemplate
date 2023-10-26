@@ -21,13 +21,20 @@ Dieses JavaFX Starter Template nutzt das Build-System [Gradle](https://gradle.or
 6.  JavaFX App starten:
     1. Terminal Linux/MacOS: `./gradlew run`
     2. Terminal Windows: `gradlew.bat run`
-    3. Eclipse: 
-      1. Rechtsklick aufs Projekt `/Run as/Run Configurations`
-      2. Doppelklick auf `Gradle Task` um einen neuen Gradle Task zu erstellen
-      3. Gradle Task hinzufügen und `run` nennen
-      4. Bei `Working Directory` das aktuelle Projekt auswählen
-      5. run
-    4. IntelliJ: Im Gradle-Menü rechts auf `<app name>/Tasks/application/run`
+    3. Eclipse: Im Menü unten auf Gradle Tasks dann <app name>/application/run (aufklappen)
+    4. IntelliJ: Im Gradle-Menü rechts auf  `<app name>/Tasks/application/run` (aufklappen)
+
+## Nutzung
+Die Main Klasse der Anwendung liegt unter `src/application/App`
+
+### Gradle Dateien und Ordner nicht löschen
+Folgende Ordner und Dateien dürfen nicht gelöscht werden, da sie von Gradle benötigt werden.
+* `gradle`
+* `build.gradle`
+* `gradlew`
+* `gradlew.bat`
+* `settings.gradle`
+
 
 ## Wenn eine andere Java Version genutzt wird
-1. In `build.gradle` den Eintrag `JavaLanguageVersion.of(17)` die Java Version eintragen. Kompatiblität beachten.
+1. In `build.gradle` den Eintrag `JavaLanguageVersion.of(17)` die Java Version eintragen. Kompatiblität zu JavaFX beachten.
